@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ficha del Proyecto"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            app:cardCornerRadius="30dp"
+            app:cardMaxElevation="50dp"
+            android:backgroundTint="@color/colorPrimaryLight"
+            app:layout_constraintTop_toBottomOf="@id/titulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="6dp"
+                android:layout_margin="12dp">
+
+                <!-- Curso -->
+                <TextView
+                    android:id="@+id/cursoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Curso:"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/Curso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2024 - 2025"
+                    android:textColor="@color/whiteHigh"
+                    android:layout_marginTop="4dp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"/>
+
+                <!-- Escuela -->
+                <TextView
+                    android:id="@+id/escuelaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Escuela:"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/Escuela"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IES Álvaro Falomir"
+                    android:textColor="@color/whiteHigh"
+                    android:layout_marginTop="4dp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"/>
+
+                <!-- Nombre del Módulo -->
+                <TextView
+                    android:id="@+id/moduloLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Módulo:"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/modulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CFGS Desarrollo de Aplicaciones Multiplataforma"
+                    android:textColor="@color/whiteHigh"
+                    android:layout_marginTop="4dp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"/>
+
+                <!-- Asignatura -->
+                <TextView
+                    android:id="@+id/asignaturaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asignatura:"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/asignatura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Programación multimedia y dispositivos móviles"
+                    android:textColor="@color/whiteHigh"
+                    android:layout_marginTop="4dp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"/>
+
+                <!-- Alumno -->
+                <TextView
+                    android:id="@+id/alumnoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alumno:"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/alumno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pablo Rodríguez Manrique"
+                    android:textColor="@color/whiteHigh"
+                    android:layout_marginTop="4dp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"/>
+
+                <!-- Nombre del Proyecto -->
+                <TextView
+                    android:id="@+id/proyectoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Proyecto:"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/proyecto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Atlas App"
+                    android:textColor="@color/whiteHigh"
+                    android:layout_marginTop="4dp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"/>
+
+                <!-- Fecha -->
+                <TextView
+                    android:id="@+id/fechaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha:"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="09/12/2024"
+                    android:textColor="@color/whiteHigh"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

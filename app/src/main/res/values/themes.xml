@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Atlas" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorOnContainer">@color/colorPrimaryLight</item>
+
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSurface">@color/blackHigh</item>
+        <item name="colorOnPrimarySurface">@color/blackHigh</item>
+        <item name="colorOnBackground">@color/blackHigh</item>
+        <item name="colorSurface">@color/white</item>
+
+    </style>
+
+    <style name="Theme.Atlas" parent="Base.Theme.Atlas" />
+</resources>
